@@ -1,5 +1,6 @@
 # python的标识符可以使用字母、数字、下划线，但是开头只能够使用字母或是下划线
 from email.utils import collapse_rfc2231_value
+import sys
 
 _As = 1
 print(_As)
@@ -110,3 +111,27 @@ print(none1)
 none2 = None
 print(none2)
 print(none1 is none2)
+
+#print输出函数
+#print函数可以接受多个变量，中间使用,进行分割
+#多个参数之间会自动加入空格，结束会自动输出\n
+print("test", s5[1:])
+#可以设置分隔符和结束符
+print("hello", "world", s5[1:], sep = ' 分割 ', end = ' 结束\n')
+
+#使用input()进行输入
+#可以在括号中添加提示信息
+#函数返回值是一个string，如果想要得到其他类型的数据需要进行显式的类型转换
+# question = input('请输入你的问题')
+# print(question)
+# num = int(input("请输入一个数字"))
+# print(num)
+
+#同行内写多行语句
+print('第一行语句');print('第二行语句');print('第三行语句')
+
+print("输出命令行参数")
+for i in sys.argv:
+    print(i)
+print("输出路径")
+print(sys.path)

@@ -105,4 +105,127 @@
    '''
    ```
 
-8. 
+8. 输出：使用print()函数
+
+   ```python
+   #print输出函数
+   #print函数可以接受多个变量，中间使用,进行分割
+   #多个参数之间会自动加入空格，结束会自动输出\n
+   print("test", s5[1:])
+   #可以设置分隔符和结束符
+   print("hello", "world", s5[1:], sep = ' 分割 ', end = ' 结束\n')
+   
+   """
+   test 123456789
+   hello 分割 world 分割 123456789 结束
+   """
+   ```
+
+9. 输入：使用input()函数
+
+   ```python
+   #使用input()进行输入
+   #可以在括号中添加提示信息
+   #函数返回值是一个string，如果想要得到其他类型的数据需要进行显式的类型转换
+   question = input('请输入你的问题')
+   print(question)
+   num = int(input("请输入一个数字"))
+   print(num)
+   
+   '''
+   请输入你的问题你好世界
+   你好世界
+   请输入一个数字10
+   10
+   '''
+   ```
+
+10. 可以使用`;`分割来实现同行内写多行语句`print('第一行语句');print('第二行语句');print('第三行语句')`
+
+11. 模块导入
+
+    可以使用import somemoduel来实现导入模块，使用from somemodule import来导入模块中的某些函数
+
+
+
+# 运算符
+
+## 算术运算符
+
+其他的和cpp类似，有两个特殊的运算符：
+
+1. `//`表示除法，但是结果会向下取整
+2. `**`表示幂次
+
+```python
+#算术运算符
+a = 10
+b = 3
+print(a // b)
+print(a ** b)
+
+'''
+3
+1000
+'''
+```
+
+## 赋值运算符
+
+```python
+#赋值运算符
+c = 10
+c //= 3
+print(c)
+c **= 3
+print(c)
+if((d := 3) < 4):
+    print(d)
+    
+'''
+3
+27
+3
+'''
+```
+
+只有三个是没有见过的：
+
+1. `//=`就是整除再赋值
+2. `**=`就是先取幂次再赋值
+3. `:=`可以实现先赋值，再返回赋值的结果
+
+## 逻辑运算符
+
+逻辑运算符直接使用and or not来充当
+
+```python
+#逻辑运算符
+#直接使用and or not来表示
+a = True
+b = False
+if(a and b):
+    print('True')
+else:
+    print('False')
+
+if(a or b):
+    print('True')
+else:
+    print('False')
+
+if(not a):
+    print('False')
+else:
+    print('True')
+
+False
+True
+True
+
+```
+
+
+
+# 基本数据类型
+
